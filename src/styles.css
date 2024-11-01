@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Estilos para el Navbar */
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #c26fc7;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #a152a1;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el main */
+  main {
+    flex: 1;
+    padding: 80px 20px 40px; /* Para dejar espacio debajo del navbar fijo */
+  }
+  
+  /* Estilos para el Footer */
+  footer {
+    background-color: #333;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer a {
+    color: #c26fc7;
+    text-decoration: none;
+  }
+  

@@ -1,11 +1,6 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [{
-    path: '',
-    pathMatch: 'full',
-    loadComponent: () => import('./pages/home/home.component')
-      .then(mod => mod.HomeComponent)
-  }, 
+export const routes: Routes = [
   {
     path: 'blog',
     loadComponent: () => import('./pages/blog/blog-list/blog-list.component').then(mod => mod.BlogListComponent)
@@ -30,6 +25,12 @@ export const routes: Routes = [{
     path: 'recipes/:id',
     loadComponent: () => import('./pages/recipes/recipes-detail/recipes-detail.component').then(mod => mod.RecipesDetailComponent)
   },
+  {
+    path: '',
+    pathMatch: 'full',
+    loadComponent: () => import('./pages/home/home.component')
+      .then(mod => mod.HomeComponent)
+  }, 
   {
     path: '**',
     loadComponent: () => import('./pages/page-not-found/page-not-found.component')

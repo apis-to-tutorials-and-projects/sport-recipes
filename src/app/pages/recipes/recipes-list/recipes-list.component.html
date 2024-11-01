@@ -1,1 +1,38 @@
-<p>recipes-list works!</p>
+{{recipesList | json }}
+<div class="recipes-container">
+    <div class="recipes-list">
+        @for (recipe of recipesList; track recipe.id) {
+            <div class="recipe-card">
+                <img src="https://picsum.photos/300/200" alt="Recipe Image" class="recipe-image">
+                <div class="recipe-content">
+                  <h2 class="recipe-title">{{ recipe.type }}</h2>
+                  <p class="recipe-time">{{ recipe.consumption_time }}</p>
+                  <p class="recipe-benefit">{{ recipe.benefit }}</p>
+                  <div class="recipe-tags">
+                    <span class="badge">#{{ recipe.type }}</span>
+                    @for (item of recipe.items; track item.id) {
+                        <span>
+                            @if (item.maltodextrin != '-') {
+                                <span class="badge">Maltodextrin</span>
+                            }
+                            @if (item.fructose != '-') {
+                                <span class="badge">Fructosa</span>
+                            }
+                            @if (item.salt != '-') {
+                                <span class="badge">Salt</span>
+                            }
+                            @if (item.whey_protein != '-') {
+                                <span class="badge">Whey Protein</span>
+                            }
+                          </span>
+                    }
+                    
+                  </div>
+                  <button class="details-button" (click)="viewDetails()">View Details</button>
+                </div>
+              </div>
+          }
+    </div>
+</div>
+
+

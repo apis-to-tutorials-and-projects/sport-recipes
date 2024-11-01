@@ -1,0 +1,96 @@
+{
+    "recipes": [
+      {
+        "type": "Hypotonic",
+        "consumption_time": "60'-15' before training",
+        "benefit": "Prevents fatigue caused by dehydration",
+        "items": [
+          {
+            "id": 1,
+            "water_amount": "500 ml",
+            "maltodextrin": "25 g",
+            "salt": "1 g",
+            "fructose": "-",
+            "whey_protein": "-",
+            "nutritional": {
+              "calories": "95 kcal",
+              "carbohydrates": "24 g",
+              "proteins": "-",
+              "sodium": "390 mg"
+            }
+          },
+          {
+            "id": 2,
+            "water_amount": "250 ml",
+            "maltodextrin": "12.5 g",
+            "salt": "1 g",
+            "fructose": "-",
+            "whey_protein": "-",
+            "nutritional": {
+              "calories": "48 kcal",
+              "carbohydrates": "12 g",
+              "proteins": "-",
+              "sodium": "390 mg"
+            }
+          }
+        ]
+      },
+      {
+        "type": "Isotonic",
+        "consumption_time": "During training",
+        "benefit": "Hydrates and enhances performance during exercise",
+        "items": [
+          {
+            "id": 1,
+            "water_amount": "750 ml",
+            "maltodextrin": "40 g",
+            "salt": "1 g",
+            "fructose": "-",
+            "whey_protein": "-",
+            "nutritional": {
+              "calories": "152 kcal",
+              "carbohydrates": "38 g",
+              "proteins": "-",
+              "sodium": "390 mg"
+            }
+          },
+          {
+            "id": 2,
+            "water_amount": "500 ml",
+            "maltodextrin": "27 g",
+            "salt": "1 g",
+            "fructose": "13 g",
+            "whey_protein": "-",
+            "nutritional": {
+              "calories": "158 kcal",
+              "carbohydrates": "40 g",
+              "proteins": "-",
+              "sodium": "390 mg"
+            }
+          }
+        ]
+      },
+      {
+        "type": "Hypertonic",
+        "consumption_time": "After training",
+        "benefit": "Ideal for recovery, especially for double sessions",
+        "items": [
+          {
+            "id": "Unique",
+            "water_amount": "Desired amount",
+            "maltodextrin": "Body weight (g)",
+            "salt": "-",
+            "fructose": "20 g",
+            "whey_protein": "(Maltodextrin / 5)",
+            "nutritional": {
+              "calories": "Variable",
+              "carbohydrates": "Variable",
+              "proteins": "Variable",
+              "sodium": "-"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
