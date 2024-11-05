@@ -1,4 +1,3 @@
-{{recipesList | json }}
 <div class="recipes-container">
     <div class="recipes-list">
         @for (recipe of recipesList; track recipe.id) {
@@ -8,6 +7,8 @@
                   <h2 class="recipe-title">{{ recipe.type }}</h2>
                   <p class="recipe-time">{{ recipe.consumption_time }}</p>
                   <p class="recipe-benefit">{{ recipe.benefit }}</p>
+                  <hr/>
+                  <p>Nº recetas {{ recipe.items.length }}</p>
                   <div class="recipe-tags">
                     <span class="badge">#{{ recipe.type }}</span>
                     @for (item of recipe.items; track item.id) {
@@ -28,7 +29,7 @@
                     }
                     
                   </div>
-                  <button class="details-button" (click)="viewDetails()">View Details</button>
+                  <button class="details-button" (click)="viewDetails(recipe)">View Details</button>
                 </div>
               </div>
           }

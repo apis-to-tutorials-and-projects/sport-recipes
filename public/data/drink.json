@@ -1,6 +1,7 @@
 {
     "recipes": [
       {
+        "id": "hypotonic",
         "type": "Hypotonic",
         "consumption_time": "60'-15' before training",
         "benefit": "Prevents fatigue caused by dehydration",
@@ -36,6 +37,7 @@
         ]
       },
       {
+        "id": "isotonic",
         "type": "Isotonic",
         "consumption_time": "During training",
         "benefit": "Hydrates and enhances performance during exercise",
@@ -71,6 +73,7 @@
         ]
       },
       {
+        "id": "hypertonic",
         "type": "Hypertonic",
         "consumption_time": "After training",
         "benefit": "Ideal for recovery, especially for double sessions",
