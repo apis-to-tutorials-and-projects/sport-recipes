@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #1e1e1e;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-hire {
+  background-color: #00af87;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  background: #c26fc7; /* Degradado lila */
+  color: #fff;
+  height: 50vh;
+  width: 100% !important;
+  text-align: center;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
+}
+
+.content {
+  max-width: 600px;
+  margin-bottom: 20px;
+  flex: 1; /* Permite que el contenido se ajuste al espacio disponible */
+}
+
+.image img {
+  border-radius: 10px;
+  width: 100%; /* Se ajusta automáticamente al ancho disponible */
+  max-width: 400px; /* Mantiene un límite máximo de ancho */
+  max-height: 300px;
+}
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons a {
+  background-color: var(--principal-color-hover);
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.buttons a:hover {
+  color: var(--link-hover-color);
+}
+
+.options-app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  padding-bottom: 10px;
+  border-bottom: 2px grey dotted;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: calc(33.333% - 40px);
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  font-size: 40px;
+  color: #2e8b57;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.more-link {
+  font-size: 14px;
+  color: #2e8b57;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.more-link:hover {
+  text-decoration: underline;
+}
+
+::ng-deep .page-contents {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.file-upload-button,
+button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #c26fc7;
+  color: #ffffff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.file-upload-button:hover,
+button:hover {
+  background-color: var(--principal-color-hover);
+}
+
+/* Media query para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+  .principal {
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    padding: 20px;
+    height: auto; /* Para evitar limitación de altura en pantallas pequeñas */
+  }
+
+  .content {
+    margin-bottom: 30px;
+  }
+
+  .image img {
+    width: 100%; /* Imagen ocupará el ancho completo del contenedor */
+    max-width: none; /* Elimina la limitación de 400px */
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+}
+
+/* Media query para pantallas muy pequeñas (moviles pequeños) */
+@media (max-width: 480px) {
+  .principal {
+    padding: 10px;
+  }
+
+  .content {
+    font-size: 14px; /* Reduce ligeramente el tamaño del texto para pantallas más pequeñas */
+  }
+
+  .buttons .btn {
+    font-size: 12px; /* Ajusta el tamaño de los botones */
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+blockquote,
+.important-info {
+  page-break-inside: avoid !important;
+  font-style: italic;
+  background: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+blockquote h3,
+.important-info h3 {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid black;
+}
+
+mt-16 {
+  margin-top: 1rem !important;
+}

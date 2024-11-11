@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { RecipesService } from '../../recipes.service';
+import { RecipesService } from '../../../services/recipes.service';
 import { JsonPipe } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
 

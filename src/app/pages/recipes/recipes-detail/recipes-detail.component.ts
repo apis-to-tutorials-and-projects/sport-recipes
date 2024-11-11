@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { RecipesService } from '../../recipes.service';
+import { RecipesService } from '../../../services/recipes.service';
 import { ActivatedRoute, Params } from '@angular/router';
 import { forkJoin, map, of, switchMap } from 'rxjs';
 import { JsonPipe } from '@angular/common';

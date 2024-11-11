@@ -59,7 +59,7 @@
   /* Estilos para el main */
   main {
     flex: 1;
-    padding: 80px 20px 40px; /* Para dejar espacio debajo del navbar fijo */
+    padding: 30px 0px; /* Para dejar espacio debajo del navbar fijo */
   }
   
   /* Estilos para el Footer */

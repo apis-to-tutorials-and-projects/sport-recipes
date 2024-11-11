@@ -10,6 +10,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/blog/blog-detail/blog-detail.component').then(mod => mod.BlogDetailComponent)
   },
   {
+    path: 'calculators',
+    loadComponent: () => import('./pages/calculator/calculator.component').then(mod => mod.CalculatorComponent)
+  },
+  {
     path: 'calculator-drink',
     loadComponent: () => import('./pages/calculator/calculator-drink/calculator-drink.component').then(mod => mod.CalculatorDrinkComponent)
   },
